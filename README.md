@@ -1,6 +1,7 @@
 # EventIt
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
+This is my First Angular Project, I had also used Firebase for authentication.
 
 ## Development server
 
