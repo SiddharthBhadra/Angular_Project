@@ -1,0 +1,148 @@
+<!-- Top navigation -->
+<nav style="height: 4rem;" class="navbar navbar-expand-lg navbar-light bg-dark">
+      <h1 class="text-danger"><b>Event-IT</b></h1>
+    <div class="collapse navbar-collapse">     
+        <!-- Calling SignOut() Api from AuthService -->
+      <ul class="navbar-nav ml-auto mr-0">
+        <li class="nav-item">
+          <a class="nav-link" (click)="authService.SignOut()">
+            <h3 class="btn btn-outline-danger">Logout</h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<!--img-->
+
+<mat-carousel  class="carousel slide">
+  <!--img 1-->
+  <mat-carousel-slide>
+    <div class="picsum-img-wrapper">
+      <img style="height: 29rem; width: 87rem;" src="https://www.kiddyskingdom.com/wp-content/uploads/2019/08/Kids_birthday_party_istock_avebreakmedia.width-800.jpg" alt="Random first slide">
+    </div>
+  </mat-carousel-slide>
+  <!--img 2-->
+  <mat-carousel-slide >
+    <div class="picsum-img-wrapper">
+      <img style="height: 22rem; width: 87rem;" src="https://img.freepik.com/free-photo/hand-crowd-disco_23-2147717087.jpg?size=626&ext=jpg" alt="Random second slide">
+    </div>
+  </mat-carousel-slide>
+  <!--img 3-->
+  <mat-carousel-slide >
+    <div class="picsum-img-wrapper">
+      <img style="height: 30rem; width: 87rem;" src="https://images.csmonitor.com/csm/2014/08/AGING_28628229.JPG?alias=standard_900x600" alt="Random third slide">
+    </div>
+  </mat-carousel-slide>
+</mat-carousel>
+<br>
+<br>
+<br>
+<!--card-->
+<div class="d-flex flex-row">
+  <div class="fxx">
+  <div class="d-flex justify-content-start">
+  
+  <mat-card style="height: 23rem;" class="example-card text-center " >
+    <mat-card-title>
+     Kid's<br> Party  
+    </mat-card-title>
+    <img mat-card-image style="height: 10rem;" src="https://cdn2.vectorstock.com/i/1000x1000/10/31/kids-party-vector-1081031.jpg">
+    <mat-card-content>
+      Here's the events for kids.<br>
+    </mat-card-content>
+    <br><br>
+    <mat-card-actions>
+      <button class="btn btn-primary" routerLink="../packages/">GO</button>
+    </mat-card-actions>
+  </mat-card>
+  </div>
+  </div>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  
+  <div class="d-flex justify-content-around">
+  <div class="fxx"> 
+  <mat-card style="height: 23rem;" class="example-card text-center" >
+    <mat-card-title>
+     Grown up's Party 
+    </mat-card-title>
+    <img mat-card-image style="height: 10rem;" src="https://thumbs.dreamstime.com/z/night-club-party-22930591.jpg">
+    <mat-card-content>
+      Here's the events for grown ups<br>   
+      </mat-card-content>
+      <br>
+      <mat-card-actions>
+        <button class="btn btn-primary" routerLink="../tpackage/">GO</button>
+      </mat-card-actions>
+  </mat-card>
+  </div>
+  </div>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  
+  
+  <br>
+  <br>
+  
+  <div class="ffxx">
+  <mat-card style="height: 23rem;" class="example-card text-center" >
+    <mat-card-title>
+     Aged's <br>Party  
+    </mat-card-title>
+    <img mat-card-image style="height: 10rem;" src="https://thumbs.dreamstime.com/b/dancing-old-people-happy-aged-women-men-party-laughing-grandfather-recorder-player-music-funky-flat-cartoon-style-155318248.jpg">
+    <mat-card-content>
+      Here's the events for Aged people<br>
+      </mat-card-content>
+      <br>
+      <mat-card-actions>
+        <button routerLink="../gpackage/" class="btn btn-primary">GO</button>
+        
+  </mat-card-actions>
+  </mat-card>
+  </div>
+  </div>
+<!-- Footer -->
+<footer class="page-footer font-small bg-dark ">
+
+  <!-- Footer Elements -->
+  <div class="container">
+    <!-- Grid row-->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <mdb-icon fab icon="facebook" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+              <mdb-icon fab icon="twitter" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+              <mdb-icon fab fab icon="google-plus" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+              <mdb-icon fab icon="linkedin" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+              <mdb-icon fab icon="instagram" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+              <mdb-icon fab icon="pinterest" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="../contact-us/"> Event-it.com</a>
+  </div>
+</footer>

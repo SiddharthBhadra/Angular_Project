@@ -1,0 +1,52 @@
+<!-- Top navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <h1 class="text-danger"><b>Event-IT</b></h1>
+      <div class="collapse navbar-collapse">     
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="btn btn-secondary" routerLink="../dashboard">Home</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+      <div class="collapse navbar-collapse">     
+          <!-- Calling SignOut() Api from AuthService -->
+        <ul class="navbar-nav ml-auto mr-0">
+          <li class="nav-item">
+            <a class="nav-link" (click)="authService.SignOut()">
+              <i class="btn btn-outline-danger">Logout</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+<br>
+<br>
+<div class="card text-center">
+    <div class="card-header">
+      About-US
+    </div>
+    <div class="card-body">
+      <h1 class="card-title"><b>Event-IT</b></h1>
+      <p class="card-text">Event-IT is an party booking website for birthday's.</p>
+      <br>
+      <h3> The contributers to this site are:</h3><br>
+          <ul type="none">
+              <li>Bhadra Siddharth</li>
+              <li>Darji Disha</li>
+              <li>Barot Soham</li>
+              <li>Devani Krupa</li>
+              <li>Chaturvedi Sona</li>
+              <li>Jasani Shayamal</li>
+              <li>Sakariya Bhaskar</li>
+              <li>Kunt Jemil</li>
+              <li>Mavani Romit</li>
+          </ul>
+          <hr>
+          <h2>Contact-Us at :</h2>
+          <h3>Email id:romit870@gmail.com<br>
+              phone no. +91-8200811400
+        </h3>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+.scale{
+    width: 30px;
+    height: 50px;
+}
+#caro{
+    height: 400px;
+    width: 1350px;
+}
+.example-card {
+    max-width: 200px;
+    justify-content: space-between;
+    
+    
+  }
+  .ffxx{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+  }
+    
+    
+  
+
+  .ffx{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fxx{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img{
+    height:400px;
+    width:1348px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  .scale{
+      width:20 px;
+      height:20px;
+  }
+
+  .card-container {
+    /*  not needed styles to reflect it */ 
+    background: blue;
+    padding: 10px;
+    color: white;
+    width: 500px;
+  
+    /* needed styles below */
+    display: flex;
+    justify-content: space-between;
+  }

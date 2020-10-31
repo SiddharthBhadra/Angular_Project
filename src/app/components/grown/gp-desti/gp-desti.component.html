@@ -1,0 +1,151 @@
+<!-- Top navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <h1 class="text-danger"><b>Event-IT</b></h1>
+    <div class="collapse navbar-collapse">     
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="btn btn-secondary" routerLink="../dashboard">Category</i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="btn btn-secondary" routerLink="../gpackage">Packages</i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="btn btn-secondary" routerLink="../gplatinum">Selection</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+    <div class="collapse navbar-collapse">     
+        <!-- Calling SignOut() Api from AuthService -->
+      <ul class="navbar-nav ml-auto mr-0">
+        <li class="nav-item">
+          <a class="nav-link" (click)="authService.SignOut()">
+            <i class="btn btn-outline-danger">Logout</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</nav>
+<br>
+<br>
+<br>
+<!--Places-->
+<h1 class="text-center"><b>Select place of Party</b></h1>
+<hr>
+<br>
+<div class="row justify-content-center">
+    <div class="column">
+        <input type="radio"id="place1" name="place" value="Fun World">
+          <div class="card bg-primary" style="width: 18rem;height: 24rem;">
+              <div class="card-title">
+                  <h3 class="text-center text-light"><b>Stage Cafe</b></h3>
+             </div>
+                 <img class="card-img-top" style=" height: 12rem;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR_I634Y4fWOq4_iR8J7Oe4G098_c5qmH7C6A&usqp=CAU"
+                 alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text text-light">It is a best place for old people to celebrate birthday, contact +91-122345679 to visit this place for your event </p>
+             </div>
+          </div>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <!--place 2-->
+    <div class="column">
+        <input type="radio"id="place2" name="place" value="Fun World">
+          <div class="card bg-primary" style="width: 18rem;height: 24rem;">
+              <div class="card-title">
+                  <h3 class="text-center text-light"><b>Pent Hous</b></h3>
+             </div>
+                 <img class="card-img-top" style=" height: 12rem;" src="https://46hez24c0bjf2up4py1ajrw4-wpengine.netdna-ssl.com/wp-content/uploads/2020/04/balloon-arch-banner-1024x576.jpg"
+                 alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text text-light">This is pent house designed new forest you will get fire place to keep a warm enviroment and enjoy birthday, contact +91-122345679 to visit this place for your event </p>
+             </div>
+          </div>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;     
+    <!--place 3-->
+    <div class="column">
+        <input type="radio"id="place3" name="place" value="Fun World">
+          <div class="card bg-primary" style="width: 18rem; height: 24rem;">
+              <div class="card-title">
+                  <h3 class="text-center text-light"><b>Lounge</b></h3>
+             </div>
+                 <img class="card-img-top" style=" height: 12rem;" src="https://static.designmynight.com/uploads/2019/08/old-street-records-cool-bar-shoreditch-optimised.jpg" 
+                 alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text text-light">Lounge is best confort place for old people, contact +91-122345679 to visit this place for your event </p>
+             </div>
+          </div>
+    </div>
+</div>
+<br>
+<br>
+<!--calender-->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xs-12 col-12 col-md-4 form-group">
+        <input
+        type="text"
+        placeholder="Date of Party"
+        class="form-control "
+        bsDatepicker
+        [bsConfig]="{ isAnimated: true }">
+      </div>
+    </div>
+  </div>
+    <!--payment-->
+    <br><br><br><br><br><br><br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" routerLink="../gpcheck" class="btn btn-primary" value="Payment">
+<br>
+<br>
+<br>
+ <!-- Footer -->
+ <footer class="page-footer font-small bg-dark ">
+
+    <!-- Footer Elements -->
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <mdb-icon fab icon="facebook" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+                <mdb-icon fab icon="twitter" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+                <mdb-icon fab fab icon="google-plus" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+                <mdb-icon fab icon="linkedin" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+                <mdb-icon fab icon="instagram" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+                <mdb-icon fab icon="pinterest" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="../contact-us/"> Event-it.com</a>
+    </div>
+  </footer>

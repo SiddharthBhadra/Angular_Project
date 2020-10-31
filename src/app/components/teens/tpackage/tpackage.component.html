@@ -1,0 +1,135 @@
+<!-- Top navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <h1 class="text-danger"><b>Event-IT</b></h1>
+    <div class="collapse navbar-collapse">     
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="btn btn-secondary" routerLink="../dashboard">Category</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+    <div class="collapse navbar-collapse">     
+        <!-- Calling SignOut() Api from AuthService -->
+      <ul class="navbar-nav ml-auto mr-0">
+        <li class="nav-item">
+          <a class="nav-link" (click)="authService.SignOut()">
+            <i class="btn btn-outline-danger">Logout</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</nav>
+<br>
+<br>
+<!--packages options-->
+<!--platinum-->
+<div class="flip-card d-flex mx-auto" style="width:1000px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="card text-center bg-secondary">
+         <div class="card-body">
+          <h1 class="card-text">Platinum Package</h1>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card-back">
+      <h1>Platinum Package</h1>
+      <h3>Rs 80,000</h3>
+      <p>In this Package you will get 10kg of cake, any two food items and also you will be provided a place to celebrate party, click button to get them</p>
+      <br>
+      <a routerLink="../tplatinum/" class="btn btn-primary">Select Me!</a>
+    </div>
+  </div>
+</div>
+<br>
+<br> 
+
+<!--gold-->
+<div class="flip-card d-flex mx-auto" style="width:1000px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="card text-center bg-warning">
+         <div class="card-body">
+          <h1 class="card-text">Gold Package</h1>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card-back">
+      <h1>Gold Package</h1>
+      <h3>Rs 60,000</h3>
+      <p>In this package you will get 5 kg of cake, any two food items and also you will be provided a place to celebrate party, click button to get them</p>
+      <br>
+      <a routerLink="../tgold/" class="btn btn-primary">Select Me!</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<!--silver-->
+<div class="flip-card d-flex mx-auto" style="width:1000px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="card text-center bg-light">
+        <div class="card-body">
+          <h1 class="card-text">Silver Package</h1>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card-back">
+      <h1>Silver Package</h1>
+      <h3>Rs 30,000</h3>
+      <p>In this package you will get 2.5 kg of cake, any two food items and also you will be provided a place to celebrate party, click button to get them</p>
+      <br>
+      <a routerLink="../tsilver/" class="btn btn-primary">Select Me!</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<!-- Footer -->
+<footer class="page-footer font-small bg-dark ">
+
+    <!-- Footer Elements -->
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <mdb-icon fab icon="facebook" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+                <mdb-icon fab icon="twitter" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+                <mdb-icon fab fab icon="google-plus" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+                <mdb-icon fab icon="linkedin" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+                <mdb-icon fab icon="instagram" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+                <mdb-icon fab icon="pinterest" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="../contact-us/"> Event-it.com</a>
+    </div>
+  </footer>

@@ -1,0 +1,240 @@
+<!-- Top navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <h1 class="text-danger"><b>Event-IT</b></h1>
+    <div class="collapse navbar-collapse">     
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="btn btn-secondary" routerLink="../dashboard">Category</i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="btn btn-secondary" routerLink="../tpackage">Packages</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+    <div class="collapse navbar-collapse">     
+        <!-- Calling SignOut() Api from AuthService -->
+      <ul class="navbar-nav ml-auto mr-0">
+        <li class="nav-item">
+          <a class="nav-link" (click)="authService.SignOut()">
+            <i class="btn btn-outline-danger">Logout</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</nav>
+<br>
+<br>
+<!--cake options-->
+<h1 class="text-center">Cake Options</h1>
+<hr>
+<!--cake cards-->
+<h2 class="text-center"><b>For Boys</b></h2>
+<div class="row justify-content-center"> 
+  <div class="column">
+   <div id="cake" class="card" style="width: 18rem;">
+    <!--cake 1-->
+    <img class="card-img-top" style="height: 20rem;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVmLCJp8iXSSQeE-aSHTHa8cmQqdBudnaKSQ&usqp=CAU" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Beard</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div id="cake" class="card" style="width: 18rem;">
+      <!--cake 2-->
+      <img class="card-img-top" style="height: 20rem;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxQbQtidI9Dqsc5ksbsnTG0793h05QpVnbXA&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+         <p class="card-text">Name Tag</p>
+         </div>
+     </div>
+  </div>
+  <div class="column">
+    <div id="cake" class="card" style="width: 18rem;">
+      <!--cake 3-->
+      <img class="card-img-top" style="height: 20rem;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBjpBPvYl6iXkV3181FJb2D2W0wXSjlXXpCw&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+         <p class="card-text">Never Looked so Good</p>
+         </div>
+     </div>
+  </div>
+</div>
+<br>
+<!--2nd row of cake-->
+<h2 class="text-center"><b>For Girls</b></h2>
+<div class="row justify-content-center"> 
+  <div class="column">
+   <div id="cake" class="card" style="width: 18rem;">
+    <!--cake 1-->
+    <img class="card-img-top" style="height: 21rem;" src="https://media1.popsugar-assets.com/files/thumbor/csoMtGhfNhNxdCoNpKYVHS2Nv4I/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/05/07/922/n/24155406/addurlG0VsLS/i/Watercolor-Cake.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Ranbow</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div id="cake" class="card" style="width: 18rem;">
+      <!--cake 2-->
+      <img class="card-img-top" style="height: 21rem;" src="data:image/jpeg;base64,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" alt="Card image cap">
+        <div class="card-body">
+         <p class="card-text">Deep Blue</p>
+         </div>
+     </div>
+  </div>
+  <div class="column">
+    <div id="cake" class="card" style="width: 18rem;">
+      <!--cake 3-->
+      <img class="card-img-top" style="height: 21rem;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSYoxU7K9vxRtEWS_nVYR4qjARJZ_czRvEpqw&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+         <p class="card-text">Brand</p>
+         </div>
+     </div>
+  </div>
+</div>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="badge badge-dark text-center">
+  <h3>If you Want Customized Cake Contact Us at +91-123456789</h3>
+</div>
+<br>
+<br>
+<!--Food options-->
+<h1 class="text-center">Food Options</h1>
+<hr>
+<!--food cards-->
+<div class="row justify-content-center"> 
+  <div class="column">
+   <div class="card" style="width: 18rem; height: 15rem;">
+    <!--food 1-->
+    <img class="card-img-top" style="height: 11rem;" src="https://www.shelikesfood.com/wp-content/uploads/2018/02/Easy-Spaghetti-Squash-and-Black-Bean-Enchiladas-3272.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Spicy Toast</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card" style="width: 18rem; height: 15rem;">
+      <!--food 2-->
+      <img class="card-img-top" style="height: 11rem;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTfbLG1hbX52Raz2nacHMyUwKYz5YBGIWBHfw&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+         <p class="card-text">Cheese Blast </p>
+         </div>
+     </div>
+  </div>
+  <div class="column">
+    <div class="card" style="width: 18rem; height: 15rem;">
+      <!--food 3-->
+      <img class="card-img-top" style="height: 11rem;" src="https://www.shelikesfood.com/wp-content/uploads/2018/02/Sweet-Potato-Black-Bean-Vegetarian-Meat-Ball-Enchilada-Bake-6.jpg" alt="Card image cap">
+        <div class="card-body">
+         <p class="card-text">Sweet Potato</p>
+         </div>
+     </div>
+  </div>
+</div>
+<br>
+<!--2nd row of food-->
+<div class="row justify-content-center"> 
+  <div class="column">
+   <div class="card" style="width: 18rem; height: 15rem;">
+    <!--food 1-->
+    <img class="card-img-top" style="height: 11rem;" src="https://www.acouplecooks.com/wp-content/uploads/2019/11/Baked-Flautas-009-735x919.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Veg Rolls</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card" style="width: 18rem; height: 15rem;">
+      <!--food 2-->
+      <img class="card-img-top" style="height: 11rem;" src="https://i.ndtvimg.com/i/2016-10/paneer-tikka-620_625x350_71477648077.jpg" alt="Card image cap">
+        <div class="card-body">
+         <p class="card-text">Panner Stick</p>
+         </div>
+     </div>
+  </div>
+  <div class="column">
+    <div class="card" style="width: 18rem; height: 15rem;">
+      <!--food 3-->
+      <img class="card-img-top" style="height: 11rem;" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/10/vegetable-cutlet-recipe.jpg" alt="Card image cap">
+        <div class="card-body">
+         <p class="card-text">Veg Cutlet</p>
+         </div>
+     </div>
+  </div>
+</div>
+<br>
+<br>
+<!--No. of people-->
+<div class="row justify-content-center">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">   
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Name of Cake you Want">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Name of Food-Item you want">
+        </div>  
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter Number of People">
+        </div>   
+        <a routerLink="../gdesti" class="btn btn-primary">Select Destination</a>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+
+
+
+
+  <!-- Footer -->
+<footer class="page-footer font-small bg-dark ">
+
+  <!-- Footer Elements -->
+  <div class="container">
+    <!-- Grid row-->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <mdb-icon fab icon="facebook" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+              <mdb-icon fab icon="twitter" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+              <mdb-icon fab fab icon="google-plus" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+              <mdb-icon fab icon="linkedin" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+              <mdb-icon fab icon="instagram" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+              <mdb-icon fab icon="pinterest" size="2x" class="white-text mr-md-5 mr-3"></mdb-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="../contact-us/"> Event-it.com</a>
+  </div>
+</footer>
